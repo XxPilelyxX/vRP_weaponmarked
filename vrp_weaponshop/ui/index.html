@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <v-app id="shopmarked">
+            <v-content>
+                <div id="shopmarked_SelectShop1s" v-show="showShop1">
+                    <div class="container">
+                        <div class="background">
+                            <h1>Pilely WeaponMarked</h1>
+                        </div>
+                    </div>
+                    <div class="containercard">
+                        <div class="card">
+                            <div class="face face1">
+                                <div class="content">
+                                    <h4>Golfkølle</h4>
+                                    <img src="images/golf.png">
+                                    <h3>{{ weapon1 }},-</h3>
+                                    <button type="button" class="btnbuy" @click="ChooseWeapon1()">KØB</button>
+                                </div>
+                            </div>             
+                        </div>
+                        <div class="card">
+                            <div class="face face1">
+                                <div class="content">
+                                    <h4>Kniv</h4>
+                                    <img src="images/kniv.png">
+                                    <h3>{{ weapon2 }},-</h3>
+                                    <button type="button" class="btnbuy" @click="ChooseWeapon2()">KØB</button>
+                                </div>
+                            </div>             
+                        </div>
+                        <div class="card">
+                            <div class="face face1">
+                                <div class="content">
+                                    <h4>Baseball Bat</h4>
+                                    <img src="images/bat.png">
+                                    <h3>{{ weapon3 }},-</h3>
+                                    <button type="button" class="btnbuy" @click="ChooseWeapon3()">KØB</button>
+                                </div>
+                            </div>             
+                        </div>
+                    </div>
+                    <div class="containerknap1">
+                        <div class="content">
+                            <button type="button" class="btnforrige" @click="ChooseMenu3()">FORRIGE</button>
+                            <button type="button" class="btnluk" @click="CloseMenu()">LUK</button>
+                            <button type="button" class="btnnext" @click="ChooseMenu2()">NÆSTE</button>
+                        </div>
+                    </div>
+                </div>
+                <div id="shopmarked_SelectShop2s" v-show="showShop2">
+                    <div class="container">
+                        <div class="background">
+                            <h1>Pilely WeaponMarked</h1>
+                        </div>
+                    </div>
+                    <div class="containercard">
+                        <div class="card">
+                            <div class="face face1">
+                                <div class="content">
+                                    <h4>Foldekniv</h4>
+                                    <img src="images/foldekniv.jpg">
+                                    <h3>{{ weapon4 }},-</h3>
+                                    <button type="button" class="btnbuy" @click="ChooseWeapon4()">KØB</button>
+                                </div>
+                            </div>             
+                        </div>
+                        <div class="card">
+                            <div class="face face1">
+                                <div class="content">
+                                    <h4>Machete</h4>
+                                    <img src="images/machete.png">
+                                    <h3>{{ weapon5 }},-</h3>
+                                    <button type="button" class="btnbuy" @click="ChooseWeapon5()">KØB</button>
+                                </div>
+                            </div>             
+                        </div>
+                        <div class="card">
+                            <div class="face face1">
+                                <div class="content">
+                                    <h4>Flaske</h4>
+                                    <img src="images/bottle.png">
+                                    <h3>{{ weapon6 }},-</h3>
+                                    <button type="button" class="btnbuy" @click="ChooseWeapon6()">KØB</button>
+                                </div>
+                            </div>             
+                        </div>
+                    </div>
+                    <div class="containerknap1">
+                        <div class="content">
+                            <button type="button" class="btnforrige" @click="ChooseMenu1()">FORRIGE</button>
+                            <button type="button" class="btnluk" @click="CloseMenu()">LUK</button>
+                            <button type="button" class="btnnext" @click="ChooseMenu3()">NÆSTE</button>
+                        </div>
+                    </div>
+                </div>
+                <div id="shopmarked_SelectShop3s" v-show="showShop3">
+                    <div class="container">
+                        <div class="background">
+                            <h1>Pilely WeaponMarked</h1>
+                        </div>
+                    </div>
+                    <div class="containercard">
+                        <div class="card">
+                            <div class="face face1">
+                                <div class="content">
+                                    <h4>Koben</h4>
+                                    <img src="images/koben.png">
+                                    <h3>{{ weapon7 }},-</h3>
+                                    <button type="button" class="btnbuy" @click="ChooseWeapon7()">KØB</button>
+                                </div>
+                            </div>             
+                        </div>
+                        <div class="card">
+                            <div class="face face1">
+                                <div class="content">
+                                    <h4>Wrench</h4>
+                                    <img src="images/wrench.png">
+                                    <h3>{{ weapon8 }},-</h3>
+                                    <button type="button" class="btnbuy" @click="ChooseWeapon8()">KØB</button>
+                                </div>
+                            </div>             
+                        </div>
+                        <div class="card">
+                            <div class="face face1">
+                                <div class="content">
+                                    <h4>Battle Axe</h4>
+                                    <img src="images/battelaxe.png">
+                                    <h3>{{ weapon9 }},-</h3>
+                                    <button type="button" class="btnbuy" @click="ChooseWeapon9()">KØB</button>
+                                </div>
+                            </div>             
+                        </div>
+                    </div>
+                    <div class="containerknap1">
+                        <div class="content">
+                            <button type="button" class="btnforrige" @click="ChooseMenu2()">FORRIGE</button>
+                            <button type="button" class="btnluk" @click="CloseMenu()">LUK</button>
+                            <button type="button" class="btnnext" @click="ChooseMenu1()">NÆSTE</button>
+                        </div>
+                    </div>
+                </div>
+            </v-content>
+        </v-app>
+        <script src="libraries/axios.min.js"></script>
+        <script src="libraries/vue.min.js"></script>
+        <script src="libraries/vuetify.js"></script>
+        <script src="script.js"></script>
+    </body>
+</html>
