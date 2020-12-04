@@ -10,3 +10,6 @@ Du kan ændre våbnet du modtager i config
 link: https://gyazo.com/527cf027b2c12a4c6cb0bd2b218a0db9
 
 # credits til Pilely#5278
+
+## Min discord
+link: https://discord.gg/txsA97C
